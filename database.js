@@ -8,7 +8,7 @@ const USUARIOS_SCHEMA = `
     email VARCHAR(255) NOT NULL UNIQUE,
     senhaHash VARCHAR(255) NOT NULL,
     emailVerificado INTEGER,
-    cargo VARCHAR(15) CHECK(cargo in ('admin', 'editor', 'assinante')) NOT NULL
+    cargo VARCHAR(15) CHECK (cargo in ('admin', 'editor', 'assinante')) NOT NULL
   )
   `
 
